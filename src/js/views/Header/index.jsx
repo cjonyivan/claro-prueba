@@ -10,7 +10,8 @@ export default class extends Component {
     super();
 
     this.state = {
-      movie:''
+      movie:'',
+      b_movies:''
     };
   }
 
@@ -24,10 +25,54 @@ export default class extends Component {
     .end((err,res)=>{
       let movies=JSON.parse(res.text);
       this.setState({
-        movies:movies.response.groups
+        movies:movies.response.groups,
+        b_movies:movies.response.groups
       });
     })
   }
+
+
+onChangeHandler(e){
+    var word=this.RemoveAccents(e.target.value);    
+    var movies=this.state.b_movies;
+    var filter=[];
+
+    for(var x in movies){
+      var movie=movies[x];
+      if(this.RemoveAccents(movie.title).toLowerCase().indexOf(word.toLowerCase())!==-1){
+        filter.push(movie);
+      }
+    }
+
+    if(word===''){
+        this.setState({
+            movies:this.state.b_movies,
+            b_movies:this.state.b_movies
+        });      
+    }else{
+        this.setState({
+            movies:filter,
+            b_movies:this.state.b_movies
+        });
+    }
+}
+
+
+RemoveAccents (text) {
+    var accents    = 'ÀÁÂÃÄÅàáâãäåÒÓÔÕÕÖØòóôõöøÈÉÊËèéêëðÇçÐÌÍÎÏìíîïÙÚÛÜùúûüÑñŠšŸÿýŽž',
+        accentsOut = "AAAAAAaaaaaaOOOOOOOooooooEEEEeeeeeCcDIIIIiiiiUUUUuuuuNnSsYyyZz",
+        textNoAccents = [];
+
+    for (var i in text) { 
+        var idx = accents.indexOf(text[i]);
+        if (idx != -1)
+            textNoAccents[i] = accentsOut.substr(idx, 1);
+        else
+            textNoAccents[i] = text[i];
+    }
+
+    return textNoAccents.join('');
+}
 
   
   render() {
@@ -45,8 +90,6 @@ export default class extends Component {
         return <div className="col4" key={x}><div><a href={mov.link}><img src={mov.image_small} /></a> </div></div>
       });
 
-
-
     return (
     <div>
       <header>
@@ -55,7 +98,7 @@ export default class extends Component {
         <section>
           <div className="div-search">
             <span className="span-title">BUSCAR</span>
-            <input type="" name="" className="input-search" />
+            <input  className="input-search"  input value={this.state.input} type="text" onChange={this.onChangeHandler.bind(this)}/>
           </div>
           <div className="div-movies">
              {movies}
