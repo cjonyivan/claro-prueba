@@ -4,7 +4,7 @@ const initialState = {
     list: []
 }
 
-export function showUsers(state = initialState, action) {
+export function showMovies(state = initialState, action) {
     
     switch (action.type) {
         case SHOW_USERS:

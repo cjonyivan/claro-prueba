@@ -1,0 +1,241 @@
+html,body,#root { 
+  height: 100%;
+  background: black;
+  font-family: sans-serif;
+}
+body {
+  background-color: #f7f7f7;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.56;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+input:-webkit-autofill { 
+  background-color: transparent !important
+}
+::selection {
+  background: #000;
+  color: #fff;
+  text-shadow: none
+}
+
+div.div-search{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+span.span-title{
+  color:white;
+  font-family: 'Arial';
+}
+input.input-search{
+      background: black;
+    border: 1px solid #6d6d6d;
+    height: 26px;
+    width: 300px;
+    border-radius: 22px;
+    margin-left: 41px;
+    color:white;
+    text-align: center;
+}
+div.div-movies{
+  color:white;
+  text-align: center;
+      padding-left: 50px;
+    padding-right: 50px;
+}
+div.col3{
+  width: 33.33%;
+  float: left;
+  height: 200px;
+}
+div.col3 div{
+    padding: 10px;
+}
+
+div.col4{
+  width: 25%;
+  float: left;
+  height: 200px;
+}
+
+div.col4 div{
+  cursor:pointer;
+  padding: 10px;
+}
+
+
+div.col2{
+  width: 50%;
+  float: left;
+}
+div.col12{
+  width: 100%;
+  float: left;
+}
+div.col8{
+  width: 75%;
+  float: left;
+  height: 200px;
+}
+
+div.col8 div{
+  cursor:pointer;
+  padding: 10px;
+}
+
+.title-movie{
+      font-family: Arial;
+    font-size: 30px;
+    text-align: left;
+    color: #ecaf2a;
+}
+.movie-img{
+  width: 100%;
+}
+
+.container{
+  margin-top: 100px;
+}
+.div-title{
+  color:white;
+  font-size: 12px;
+  font-weight: 700;
+}
+.div-genero{
+  color:white;
+  font-size: 15px;
+}
+.div-buttons{
+  margin-top: 20px;
+}
+
+.div-actor{
+  color:white;
+  font-size: 15px;
+}
+
+.movie-year{
+   color:White;
+   padding-left: 0px!important;
+   padding-right: 20px;
+   font-size: 14px;
+}
+
+.btn-border{
+    margin: 2px;
+    padding: 2px 4px;
+    width: auto;
+    height: auto;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    background: black;
+    color:white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.sin-padding{
+  padding-bottom: 0px!important;
+  padding-top: 0px!important;
+}
+.btn-action-left{
+  margin-left:0px!important; 
+}
+.btn-action{
+  height: auto;
+    min-width: 150px;
+    padding: 7px 32px;
+    width: auto;
+    margin: 0 7px;
+    background: black;
+    color:white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+@media only screen and (min-width: 1200px) {
+  header{
+    padding-top: 25px;
+    padding-left: 10px;
+    text-align: left!important;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  div.col4{
+    width: 50%;
+  }
+  header{
+    text-align: center;
+    padding-top: 25px;
+  }
+  div.col3{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  div.col4{
+    width: 100%;
+  }
+  div.div-movies{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  header{
+    text-align: center;
+  }
+  div.col3{
+    width: 100%;
+    height: auto;
+  }
+  .container{
+    margin-top: 0px!important;
+  }
+  .div-buttons{
+    padding-top: 1px!important;
+    padding-bottom: 20px!important;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  div.col4{
+    width: 100%;
+  }
+  div.div-movies{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  header{
+    text-align: center;
+  }
+  div.col3{
+    width: 100%;
+    height: auto;
+  }
+  .container{
+    margin-top: 0px!important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  div.col4{
+    width: 100%;
+  }
+  div.div-movies{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  header{
+    text-align: center;
+  }
+  input.input-search{
+        margin-left: 0px!important;
+  }
+}

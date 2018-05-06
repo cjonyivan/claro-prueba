@@ -5,7 +5,7 @@ import store from './store';
 
 
 
-import app from '../scss/app.scss';
+import app from '../scss/app.css';
 import Header from './views/Header';
 import Movie from  './views/Movie';
 
@@ -20,6 +20,7 @@ export default class App extends Component {
             <Switch>
               <Route exact path="/" component={Header} />
                <Route exact path="/movie/:name/:id" component={Movie} />
+               <Route path="*" component={Header} />
             </Switch>
           </div>
         </Router>

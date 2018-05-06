@@ -38,8 +38,8 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.scss$/,
-        loader: ['style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]__[hash:base64:5]', 'postcss-loader', 'sass-loader'],
+        test: /\.css$/,
+        loader: ['style-loader', 'css-loader'],
         exclude: /node_modules/
       },
       { test: /\.(png|jpg|gif)$/, use: 'url-loader?limit=15000&name=[name]-[hash].[ext]' },
@@ -51,7 +51,7 @@ module.exports = {
   },
   
   resolve: {
-    extensions: ['.js', '.jsx', '.scss'],
+    extensions: ['.js', '.jsx', '.css'],
     alias: {
       variables: resolve(__dirname, 'src/scss/utils/variables'),
       mixins: resolve(__dirname, 'src/scss/utils/mixins'),

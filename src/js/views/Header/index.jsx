@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../../img/logo.svg';
-import Styles from '../../../scss/_base.scss';
+import Styles from '../../../scss/app.css';
 import request from 'superagent';
 
 
@@ -93,7 +92,7 @@ RemoveAccents (text) {
     return (
     <div>
       <header>
-          <img src={logo} width="300" alt="Claro" className="header-logo" />
+          <img src={'http://www.clarovideo.com/webclient/sk_core/images/clarovideo-logo-sitio.svg'} width="300" alt="Claro" className="header-logo" />
         </header>
         <section>
           <div className="div-search">

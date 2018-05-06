@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../../img/logo.svg';
-import Styles from '../../../scss/_base.scss';
+import Styles from '../../../scss/app.css';
 import request from 'superagent';
 
 
@@ -19,7 +18,8 @@ export default class extends Component {
 
   
   componentDidMount(){
-      const {match} = this.props
+    
+      var {match} = this.props;
       const name = match.params.name;
       //Para la busqueda de la pelicula
       const id_movie=match.params.id;
@@ -155,7 +155,7 @@ export default class extends Component {
     return (
       <div>
         <header>
-            <img src={logo} width="300" alt="Claro" className="header-logo" />
+            <img src={'http://www.clarovideo.com/webclient/sk_core/images/clarovideo-logo-sitio.svg'} width="300" alt="Claro" className="header-logo" />
           </header>
           <section>
             <div className="row container">

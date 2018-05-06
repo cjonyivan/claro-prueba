@@ -34,7 +34,7 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.scss$/,
+        test: /\.css$/,
         exclude: /node_modules/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
@@ -54,7 +54,7 @@ module.exports = {
   },
   
   resolve: {
-    extensions: ['.js', '.jsx', '.scss'],
+    extensions: ['.js', '.jsx', '.css'],
     alias: {
       variables: resolve(__dirname, 'src/scss/utils/variables'),
       mixins: resolve(__dirname, 'src/scss/utils/mixins'),
