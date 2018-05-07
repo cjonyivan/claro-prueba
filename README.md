@@ -70,8 +70,16 @@ npm install jest -S -g
 ## EXAMEN TECNICO PRODUCCIÓN
 El aplicativo esta montado en un servidor de Amazon Web Services,se puede consulta mediante la siguiente url:
 
-@[](http://34.207.73.97/)
-@[](http://ec2-34-207-73-97.compute-1.amazonaws.com)
+
+<http://34.207.73.97/>
+<http://ec2-34-207-73-97.compute-1.amazonaws.com>
+
+
+
+
+
+
+
 
 
 
