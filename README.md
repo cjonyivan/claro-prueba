@@ -72,8 +72,20 @@ El aplicativo esta montado en un servidor de Amazon Web Services,se puede consul
 
 
 <http://34.207.73.97/>
+<br />
 <http://ec2-34-207-73-97.compute-1.amazonaws.com>
-
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 
 
