@@ -1,9 +1,9 @@
 # EXAMEN TÉCNICO DE CLARO VIDEO
 
 
-El presente examén técnico emula dos vistas del sitio de Claro Video:
-1. Vista general de las peliculas
-2. Descripcion individual de cada pelicula una vez que el usuario da click a una pelicula del listado general.
+El presente examen técnico emula dos vistas del sitio de Claro Video:
+1. Vista general de todas las peliculas.
+2. Descripción individual de cada pelicula una vez que el usuario da click a una pelicula del listado general.
 
 
 ## VISTA GENERAL
@@ -38,7 +38,7 @@ npm start
 
 ```
 
-5.Abrir el navegador e ir a:
+5.Abrir el navegador y navegar a:
 ```
 http://localhost:8111
 
@@ -67,7 +67,7 @@ npm install jest -S -g
 
 
 
-## EXAMEN TECNICO PRODUCCIÓN
+## EXAMEN TÉCNICO PRODUCCIÓN
 El aplicativo esta montado en un servidor de Amazon Web Services,se puede consulta mediante la siguiente url:
 
 
