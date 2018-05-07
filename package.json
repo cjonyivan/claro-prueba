@@ -70,6 +70,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "glob": "^7.1.2",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-hot-loader": "^3.1.2",
@@ -78,5 +79,9 @@
     "redux": "^3.7.2",
     "superagent": "^3.8.3"
   },
-  "jest": { "moduleNameMapper": { "\\.(css|less)$": "<rootDir>/src/scss/styleMock.js" } }
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/src/scss/styleMock.js"
+    }
+  }
 }
